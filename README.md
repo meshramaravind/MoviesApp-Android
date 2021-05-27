@@ -1,4 +1,6 @@
-#🎞 Movies app with MoviesApp API. Here i demonstrate the use of Modern Android 
+# MoviesApp-Android
+
+🎞 Movies app with MoviesApp API. Here i demonstrate the use of Modern Android 
 development tools - (Kotlin, Architecture Components,
 Navigation Components,
 Actions with Animations, Retrofit 2,
