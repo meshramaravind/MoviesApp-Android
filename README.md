@@ -10,8 +10,10 @@ Dark Theme & Light Theme)
 # Day Mode 🌞
 
 ![Home Light](https://user-images.githubusercontent.com/25154589/119812745-18b29d80-bf06-11eb-9742-f7a4067707ec.png)
+<img src=https://user-images.githubusercontent.com/25154589/119812745-18b29d80-bf06-11eb-9742-f7a4067707ec.png" alt="✂-1" style="max-width:100%;"> 
 
 # Dark Mode Too 😉
 
 ![Home Dark](https://user-images.githubusercontent.com/25154589/119813053-73e49000-bf06-11eb-972c-ce15d42f7896.png)
+  <img src="https://user-images.githubusercontent.com/25154589/119813053-73e49000-bf06-11eb-972c-ce15d42f7896.png" alt="✂-1" style="max-width:100%;">                                                                                                                                                
 
