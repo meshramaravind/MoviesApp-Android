@@ -7,7 +7,11 @@ LiveData, Paging 3,
 Material Components, Room DB,
 Dark Theme & Light Theme)
 
-![Home Screen Dark Theme](https://user-images.githubusercontent.com/25154589/119811719-097f2000-bf05-11eb-97f1-b34c3ec1447f.png)
+# Day Mode 🌞
 
-![Home Screen Light Theme](https://user-images.githubusercontent.com/25154589/119811924-3a5f5500-bf05-11eb-873f-de438a223935.png)
+![Home Light](https://user-images.githubusercontent.com/25154589/119812745-18b29d80-bf06-11eb-9742-f7a4067707ec.png)
+
+# Dark Mode Too #😉
+
+![Home Dark](https://user-images.githubusercontent.com/25154589/119813053-73e49000-bf06-11eb-972c-ce15d42f7896.png)
 
