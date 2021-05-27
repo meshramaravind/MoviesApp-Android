@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MaxMovies</string>
+    <string name="retry">Retry</string>
+    <string name="search_tv_show">Search</string>
+    <string name="user_profile">User Profile</string>
+    <string name="welcome_john">Welcome John!</string>
+    <string name="ui_mode">UI Mode</string>
+    <string name="read_more">Read More</string>
+    <string name="read_less">Read Less</string>
+    <string name="u2022">•</string>
+    <string name="website">Website</string>
+    <string name="episodes">Episodes</string>
+    <string name="watchlist">Watchlist</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.arvind.moviesapp.view.home.HomeFragment"
+        android:label="fragment_dashboard"
+        app:startDestination="@id/action_homeFragment_to_SearchFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_SearchFragment"
+            app:destination="@id/SearchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.arvind.moviesapp.view.search.SearchFragment"
+        android:label="@string/search_tv_show"
+        tools:layout="@layout/fragment_search_tvshows">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_dashboardFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/SearchFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

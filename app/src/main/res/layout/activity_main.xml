@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.main.MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorheadsecondary"
+            app:liftOnScroll="true"
+            tools:ignore="UnusedAttribute">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+<!--                <EditText-->
+<!--                    android:id="@+id/inputSearch"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@null"-->
+<!--                    android:fontFamily="@font/open_sans_regular"-->
+<!--                    android:hint="@string/search_tv_show"-->
+<!--                    android:imeOptions="actionDone"-->
+<!--                    android:importantForAutofill="no"-->
+<!--                    android:includeFontPadding="false"-->
+<!--                    android:inputType="text"-->
+<!--                    android:padding="@dimen/_6sdp"-->
+<!--                    android:textColor="@color/colorTextIcons"-->
+<!--                    android:textColorHint="@color/colorTextSecondary"-->
+<!--                    android:textSize="@dimen/_13sdp" />-->
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?actionBarSize"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
