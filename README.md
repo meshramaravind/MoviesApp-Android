@@ -11,7 +11,7 @@ Dark Theme & Light Theme)
 
 ![Home Light](https://user-images.githubusercontent.com/25154589/119812745-18b29d80-bf06-11eb-9742-f7a4067707ec.png)
 
-# Dark Mode Too #😉
+# Dark Mode Too 😉
 
 ![Home Dark](https://user-images.githubusercontent.com/25154589/119813053-73e49000-bf06-11eb-972c-ce15d42f7896.png)
 
