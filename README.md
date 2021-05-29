@@ -18,4 +18,8 @@ Dark Theme & Light Theme)
 
 <img src="https://user-images.githubusercontent.com/25154589/119813053-73e49000-bf06-11eb-972c-ce15d42f7896.png" width="200" />
 
+# Movies API
+
+https://www.episodate.com/api
+
 
