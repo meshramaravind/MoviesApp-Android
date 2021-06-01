@@ -24,8 +24,6 @@ Dark Theme & Light Theme)
 
 <img src="https://user-images.githubusercontent.com/25154589/119813053-73e49000-bf06-11eb-972c-ce15d42f7896.png" width="200" />
 
-<img src="https://user-images.githubusercontent.com/25154589/120212850-23e03300-c250-11eb-9c71-1adc89a7de33.png" width="200" />
-
 <img src="https://user-images.githubusercontent.com/25154589/120305969-ff876380-c2ee-11eb-81b2-02f575a8a5a6.png" width="200" />
 
 <img src="https://user-images.githubusercontent.com/25154589/120212939-45d9b580-c250-11eb-8744-a39b767b6a4d.png" width="200" />
