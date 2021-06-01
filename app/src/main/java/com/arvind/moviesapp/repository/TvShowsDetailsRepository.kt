@@ -1,56 +1,37 @@
 package com.arvind.moviesapp.repository
 
 import android.app.Application
-import android.util.Log
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.arvind.moviesapp.model.showdetails.DataModelShowDetailsBase
-import com.arvind.moviesapp.response.showdetails.ResponseTvShowDetails
 import com.arvind.moviesapp.webapi.ApiService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.util.ArrayList
+import java.util.*
 import javax.inject.Inject
 
 
 class TvShowsDetailsRepository @Inject constructor(
-    private val apiService: ApiService, application: Application, private val id: String
+    private val apiService: ApiService
 ) {
 
-    private var tvShowsArrayList = ArrayList<ResponseTvShowDetails>()
-    private val mutableLiveData = MutableLiveData<List<ResponseTvShowDetails>>()
-
-    fun getMutableLiveData(): MutableLiveData<List<ResponseTvShowDetails>> {
-        val userDataService = apiService
-        val call = userDataService.getTVShowDetails(id)
-
-        call.enqueue(object : Callback<DataModelShowDetailsBase> {
-            internal var message: String? = null
-
+    fun getTVShowDetails(id: String?): LiveData<DataModelShowDetailsBase?>? {
+        val data: MutableLiveData<DataModelShowDetailsBase?> =
+            MutableLiveData<DataModelShowDetailsBase?>()
+        apiService.getTVShowDetails(id).enqueue(object : Callback<DataModelShowDetailsBase?> {
             override fun onResponse(
-                call: Call<DataModelShowDetailsBase>,
-                response: Response<DataModelShowDetailsBase>
+                call: Call<DataModelShowDetailsBase?>,
+                response: Response<DataModelShowDetailsBase?>
             ) {
-
-                if (response.isSuccessful()) {
-                    val apiresponse: DataModelShowDetailsBase? = response.body()
-                    if (apiresponse != null) {
-                        tvShowsArrayList =
-                            apiresponse.tvShow as ArrayList<ResponseTvShowDetails>
-                        mutableLiveData.setValue(tvShowsArrayList)
-                    }
-                }
-
+                data.setValue(response.body())
             }
 
-            override fun onFailure(call: Call<DataModelShowDetailsBase>, t: Throwable) {
-                t.printStackTrace()
-                Log.d(TAG, t.message!!)
-
+            override fun onFailure(call: Call<DataModelShowDetailsBase?>, t: Throwable) {
+                data.setValue(null)
             }
         })
-
-        return mutableLiveData
+        return data
     }
 
     companion object {

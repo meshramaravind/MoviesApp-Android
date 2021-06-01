@@ -83,10 +83,8 @@ object AppModule {
     @Provides
     fun providesTvShowsDetailsRepository(
         apiService: ApiService,
-        application: Application,
-        id: String
     ): TvShowsDetailsRepository {
-        return TvShowsDetailsRepository(apiService, application, id)
+        return TvShowsDetailsRepository(apiService)
     }
 
 }

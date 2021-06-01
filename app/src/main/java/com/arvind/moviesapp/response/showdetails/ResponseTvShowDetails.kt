@@ -1,5 +1,6 @@
 package com.arvind.moviesapp.response.showdetails
 
+import com.arvind.moviesapp.response.episode.ResponseEpisodes
 import com.google.gson.annotations.SerializedName
 
 data class ResponseTvShowDetails(@SerializedName("id") val id : Int,

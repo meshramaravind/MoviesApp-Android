@@ -6,12 +6,16 @@ import androidx.core.view.isGone
 import androidx.core.view.isInvisible
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.navArgs
+import androidx.navigation.navArgs
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.arvind.moviesapp.R
 import com.arvind.moviesapp.databinding.ActivityMainBinding
+import com.arvind.moviesapp.response.popular.ResponseTv_shows
 import com.arvind.moviesapp.utils.hide
 import com.arvind.moviesapp.utils.show
+import com.arvind.moviesapp.view.details.TvShowsDetailsFragmentArgs
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         initViews(binding)
         observeNavElements(binding, navHostFragment.navController)

@@ -7,6 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue_500">#006AF6</color>
+
 
     <color name="colorbackground">#16202A</color>
     <color name="colorcardview">#38414A</color>
@@ -25,4 +27,5 @@
     <color name="color_light_blue">#E8E9F1</color>
     <color name="colorgreen">#4CAF50</color>
     <color name="colorheadsecondary">#1C2939</color>
+    <color name="colorgrayview">#A3A0A0</color>
 </resources>

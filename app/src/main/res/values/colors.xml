@@ -7,10 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue_500">#1970CD</color>
+
 
     <color name="colorbackground">#f9f9f9</color>
     <color name="colorcardview">#FFFFFFFF</color>
-    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorTextIcons">#38414A</color>
     <color name="colorPrimaryLight">#1E2746</color>
     <color name="colorTextPrimary">#CBD5ED</color>
     <color name="colorTextSecondary">#4A5B82</color>
@@ -25,5 +27,6 @@
     <color name="color_light_blue">#E8E9F1</color>
     <color name="colorgreen">#4CAF50</color>
     <color name="colorheadsecondary">#FAFAFA</color>
+    <color name="colorgrayview">#c0c0c0</color>
 
 </resources>

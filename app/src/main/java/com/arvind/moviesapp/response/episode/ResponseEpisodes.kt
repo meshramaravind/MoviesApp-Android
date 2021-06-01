@@ -1,4 +1,4 @@
-package com.arvind.moviesapp.response.showdetails
+package com.arvind.moviesapp.response.episode
 
 import com.google.gson.annotations.SerializedName
 

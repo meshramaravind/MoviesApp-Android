@@ -5,6 +5,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +13,7 @@ import androidx.transition.AutoTransition
 import androidx.transition.TransitionManager
 import com.arvind.moviesapp.databinding.ItemsMostPopularTvshowsBinding
 import com.arvind.moviesapp.response.popular.ResponseTv_shows
+import com.arvind.moviesapp.view.home.HomeFragmentDirections
 
 
 class CustomAdapterMostPopular(
@@ -40,8 +42,13 @@ class CustomAdapterMostPopular(
     inner class MyViewHolder(private val binding: ItemsMostPopularTvshowsBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: ResponseTv_shows) = with(binding) {
-            mostpopulartvshows = item
+        fun bind(responsetvShows: ResponseTv_shows) = with(binding) {
+            mostpopulartvshows = responsetvShows
+            binding.root.setOnClickListener { v ->
+                val direction = HomeFragmentDirections
+                    .actionHomeFragmentToDetailsFragment(responsetvShows)
+                v.findNavController().navigate(direction)
+            }
 
         }
     }

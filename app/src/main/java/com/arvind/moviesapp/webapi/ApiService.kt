@@ -2,6 +2,7 @@ package com.arvind.moviesapp.webapi
 
 import com.arvind.moviesapp.model.popular.DataModelPapularBase
 import com.arvind.moviesapp.model.showdetails.DataModelShowDetailsBase
+import com.arvind.moviesapp.response.showdetails.ResponseTvShowDetails
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.GET
